@@ -9,8 +9,8 @@ else
 fi
 
 echo "Files: $files"
-while IFS= read -r line  #IFS,internal field seperatpor, empty it will ignore while space.-r is for not to ingore special charecters like /,*,$
+while IFS= read -r file  #IFS,internal field seperatpor, empty it will ignore while space.-r is for not to ingore special charecters like /,*,$, line is reserved key word
 do
-    echo "deleting lines: $line"
+    echo "deleting file: $file"
     rm -rf $line
 done <<< $files
