@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -ex
+set -e
 failure(){
     echo "the error is at : $1 and command is $2"
 }
